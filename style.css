@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0 10px 10px;
+   
+}
+
+h3{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: crimson;
+}
+
+#email{
+    margin-left: 9%;
+}
+#phone{
+    margin-left: 7%;
+}
+#bags {
+    margin-left: 9%;
+}
+
+label{
+    font-family: sans-serif;
+}
+
+.submit{
+    margin-left: 30%;
+    color: white;
+    font-family: sans-serif;
+    padding: 5px;
+    background-color: crimson;
+    border: none;
+    width: 80px;
+    border-radius: 2px;
+}
+
+.reset{
+    width: 60px;
+    color: white;
+    font-family: sans-serif;
+    padding: 5px;
+    background-color: crimson;
+    border: none;
+    width: 80px;
+        border-radius: 2px;
+}
+
