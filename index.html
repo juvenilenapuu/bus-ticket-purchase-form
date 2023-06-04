@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket Purchase</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="bus.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>BUS PURCHASE TICKET</h3>
+      <hr />
+      <form action="">
+        <!-------------radioButton with name passengerType----------------->
+        <input type="radio" name="passengerType" id="" checked /><label
+          for="passengerType"
+          >Adult</label
+        >
+        <input type="radio" name="passengerType" id="" /><label
+          for="passengerType"
+          >Child</label
+        >
+        <input type="radio" name="passengerType" id="" /><label
+          for="passengerType"
+          >Senior</label
+        >
+        <input type="radio" name="passengerType" id="" /><label
+          for="passengerType"
+          >Student</label
+        ><br /><br />
+        <!----------------------------selectOption-------------------------->
+        <label for="goingFrom">Going From:</label>
+        <select name="Town" id="goingFrom">
+          <option value="Bathurst">Bathurst</option>
+          <option value="Campbellton">Campbellton</option>
+          <option value="Edmunston">Edmunston</option>
+          <option value="Fredericton">Fredericton</option>
+          <option value="Miramichi">Miramichi</option>
+          <option value="Moncton">Moncton</option>
+          <option value="Saint Andrews">Saint Andrews</option>
+          <option value="Saint John">Saint John</option>
+          <option value="Saint Stephen">Saint Stephen</option>
+          <option value="Sussex">Sussex</option>
+          <option value="Woodstock">Woodstock</option>
+        </select>
+
+        <label for="goingTo">Going To:</label>
+        <select name="Town" id="goingTo">
+          <option value="Bathurst">Bathurst</option>
+          <option value="Campbellton">Campbellton</option>
+          <option value="Edmunston">Edmunston</option>
+          <option value="Fredericton">Fredericton</option>
+          <option value="Miramichi">Miramichi</option>
+          <option value="Moncton">Moncton</option>
+          <option value="Saint Andrews">Saint Andrews</option>
+          <option value="Saint John">Saint John</option>
+          <option value="Saint Stephen">Saint Stephen</option>
+          <option value="Sussex">Sussex</option>
+          <option value="Woodstock">Woodstock</option></select
+        ><br /><br />
+        <input type="radio" name="tripType" id="" checked />
+        <label for="tripType">Return</label>
+        <input type="radio" name="tripType" id="" />
+        <label for="">One Way</label><br /><br />
+
+        <label for="departingDate">Departing:</label>
+        <input type="date" name="" id="departingDate" required />
+        <label for="returningDate">Returning:</label>
+        <input type="date" name="" id="returningDate" required /><br /><br />
+
+        <label for="fistName">First Name</label>
+        <input type="text" name="" id="firstName" required /><br /><br />
+        <label for="lastName">Last Name</label>
+        <input type="text" name="" id="lastName" required />
+        <br /><br />
+
+        <label for="email">Email</label>
+        <input type="email" name="" id="email" />
+        <br /><br />
+
+        <label for="phone">Phone</label>
+        <input
+          type="tel"
+          name=""
+          id="phone"
+          pattern="\d\d\d-\d\d\d-\d\d\d\d"
+          placeholder="NNN-NNN-NNNN"
+        />
+        <br /><br />
+
+        <label for="bags">Bags</label>
+        <input
+          type="number"
+          name="Bags"
+          id="bags"
+          min="0"
+          required
+        /><br /><br />
+        <button type="submit" class="submit">SUBMIT</button>
+        <button type="reset" class="reset">RESET</button>
+      </form>
+    </div>
+  </body>
+</html>
